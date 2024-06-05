@@ -5,7 +5,7 @@ var io = require('socket.io')(server);
 var dateFormat = require('dateformat');
 var favicon = require('serve-favicon');
 
-app.set('port', (process.env.PORT || 3000));
+app.set('port', 2053);
 app.use(favicon(__dirname + '/app/images/favicon.ico'));
 app.use('/npm', express.static('node_modules'));
 app.use(express.static('app'));
